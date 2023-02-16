@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* .container {
+
+} */
+
+.slider {
+    font-size: 3em;
+    border-radius: 30px;
+    background-color: blueviolet;
+    height: 30rem;
+    width: 95%;
+    height: 30rem;
+    margin: 3rem;
+}
+
