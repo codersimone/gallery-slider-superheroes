@@ -1,5 +1,4 @@
-//JSON array of super heroes
-let arraySuperHeroesJSON = `[{
+[{
     "superHeroePic": "pics/batman.jpeg",
     "superHeroePicAlternativeText": "Batman",
     "superHeroeCharacter": "Бэтмен",
@@ -99,57 +98,4 @@ let arraySuperHeroesJSON = `[{
     "friends": "частично Мстители, Человек-паук, Росомаха", 
     "superPowers": "высокий болевой порог, регенерация и бессмертие, сверхчеловеческая иммунная система", 
     "moreDetailed": "как и Росомаха из Людей Икс, Дэдпул был подвергнут опытам по программе «Оружие Икс». Ученые попытались исцелить его рак, привив его клеткам способность к регенерации. Как и всегда в комиксах, что-то пошло не так, и Дэдпул остался изуродованным и психически нестабильным.<br><br>Это единственный супергерой из списка, который однозначно не на стороне добра. Дэдпул наслаждается насилием. Первоначально появившись в основной Вселенной Marvel, он получил альтернативные варианты в других реальностях Мультивселенной. Что оставалось неизменным — его циничное, черное чувство юмора: за него Дэдпула прозвали «Болтливым наемником»."
-}]`;
-
-//parsing JSON array of super heroes
-const superHeroesBase = JSON.parse(arraySuperHeroesJSON);
-console.log(superHeroesBase);
-
-
-//задаем первый индекс для отсчета
-let index = 0;
-//созданный массив фиксирует вывод слайдов по порядку
-const superArr = ['Бэтмен', 'Супермен', 'Железный человек', 'Спайдер-мен/Человек-паук', 'Капитан Америка', 'Тор', 'Халк', 'Чудо-женщина', 'Черная вдова', 'Дэдпул'];
-
-
-//json файл
-
-
-
-//готовим объект
-// const superDescription = {
-//     'Бэтмен': {
-//         description: "о бэтмене",
-//         image: "картинка бэтмена"
-//     },
-// };
-
-function slideNext() {
-    //зацикливание слайдов 
-    if (index == superArr.length-1) {
-        index = 0;
-    } else (index = index+1);
-
-    //получаем данные карточки героя
-    let heroeName = superArr[index];
-    const moreDetailed = superHeroesBase[heroeName].moreDetailed;
-    const superHeroePic = superHeroesBase[heroeName].superHeroePic;
-
-    //куда мы будем вставлять данные карточки героя
-    document.getElementsByClassName('.slider__card');
-    document.getElementById('superDescription').innerHTML = moreDetailed;
-
-    //нужно подставить информацию о героях на один и тот же слайд
-    
-
-}
-
-
-
-//?????????????????????????
-// function slidePrev() {
-//     //зацикливание слайдов 
-//     if (index = 0) {
-//     index = index-1
-//     }
-// }
+}]

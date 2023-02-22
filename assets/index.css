@@ -26,7 +26,7 @@ body {
     border-radius: 5em;
 }
 
-.slider__card01 {  
+.slider__card {  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -36,16 +36,14 @@ body {
     padding: 1em;
 }
 
-.arrow-left,
-.arrow-right {
+.arrow-left {
     margin: 20px 8px;
     width: 80px;
     height: 80px;
     cursor: pointer;
 }
 
-.arrow-left path,
-.arrow-right path {
+.arrow-left path {
     fill: #337AB7;
     transition: fill 0.5s ease-out;
 }
@@ -54,7 +52,6 @@ body {
     transform: rotate(180deg);
 }
 
-.arrow-left:hover path,
-.arrow-right:hover path {
+.arrow-left:hover path {
     fill: #000;
 }
