@@ -21,27 +21,17 @@
 
         <!-- prev arrow -->
             <div class="arrowStyle">
-                <svg id="superArrowLeft" class="arrow-left" viewBox="0 0 5 9">
+                <svg onclick="slidePrev()" id="superArrowLeft" class="arrow-left" viewBox="0 0 5 9">
                     <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
                 </svg>
             </div>
 
         <!-- JSON info -->
-            <div id="super-slider-card" class="slider-card">
-                <div id="" class="slider__main-text">
-                    <h2 class="slider__card-name">${heroeName}</h2>
-                    <div id="" class=""><b>Вселенная:</b> ${universe}</div>
-                    <div id="" class=""><b>Альтер эго:</b> ${alterEgo}</div>
-                    <div id="" class=""><b>Род деятельности:</b> ${activity}</div>
-                    <div id="" class=""><b>Друзья:</b> ${friends}</div>
-                    <div id="" class=""><b>Суперсилы:</b> ${powers}</div>
-                </div>
-                <img id="" class="slider__card-image" src=`${image}` alt="Batman / DC comics" />
-            </div>
+            <div id="super-slider-card" class="slider-card"></div>
 
         <!-- next arrow -->
             <div class="arrowStyle">
-                <svg id="superArrowRight" class="arrow-right" viewBox="0 0 5 9">
+                <svg onclick="slideNext()" id="superArrowRight" class="arrow-right" viewBox="0 0 5 9">
                     <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
                 </svg>
             </div>
@@ -49,7 +39,7 @@
         </div>
 
     </main>
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
     <!-- <script src="./arraySuperHeroesJSON.js"></script> -->
 </body>
 </html>
